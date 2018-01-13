@@ -10,3 +10,7 @@
 
 * [index_hw01.html](./index_hw01.html) - HTML index file for hw01 site
 
+* [hw01-status.txt](./hw01-status.txt) - hw01 status file
+
+* [screenfetch.png](./screenfetch.png) - Local Linux desktop screenfetch
+
