@@ -1,6 +1,7 @@
 (function() {
   "use strict";
 
+  // Initial function to call when the page is loaded
   function init() {
     var loremIpsumLink = document.getElementById('lorem-ipsum-link');
     var nnBottlesLink = document.getElementById('nn-bottles-link');
@@ -10,6 +11,7 @@
     nnBottlesLink.onclick = nnBottles;
     lastThingLink.onclick = lastThing;
 
+    // template string of the Lorem Ipsum text
     var loremIpsumText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Maecenas lobortis erat mi, sed commodo nulla vestibulum vitae.
         Proin libero leo, aliquet vel dolor at, placerat tempus est.
@@ -51,12 +53,15 @@
         Nam aliquet lectus ac varius varius.
         Duis pulvinar nibh vitae leo blandit sollicitudin.`;
 
+    // sets the initial text in the right column paragraph to be the Lorem Ipsum text
     document.getElementById('right-column-text').innerHTML = loremIpsumText;
   }
 
+  // Changes the right column paragraph text to be four paragraphs of Lorem Ipsum
   function loremIpsum() {
     // paragraph element in the right column
     var columnText = document.getElementById('right-column-text');
+    // template string of the Lorem Ipsum text
     var loremIpsumText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Maecenas lobortis erat mi, sed commodo nulla vestibulum vitae.
         Proin libero leo, aliquet vel dolor at, placerat tempus est.
@@ -98,13 +103,15 @@
         Nam aliquet lectus ac varius varius.
         Duis pulvinar nibh vitae leo blandit sollicitudin.`;
 
-    // sets the text inside the right column paragraph to be the four Lorem Ipsum paragraphs
+    // sets the text inside the right column paragraph to be the Lorem Ipsum text
     columnText.innerHTML = loremIpsumText;
   }
 
+  // Changes the right column paragraph text to be the first four verses of "99 Bottles of Beer"
   function nnBottles() {
     // paragraph element in the right column
     var columnText = document.getElementById('right-column-text');
+    // template string of the 99 Bottles text
     var nnBottlesText = `99 bottles of beer on the wall, 99 bottles of beer.<br>
         Take one down and pass it around, 98 bottles of beer on the wall.<br><br>
         98 bottles of beer on the wall, 98 bottles of beer.<br>
@@ -114,16 +121,21 @@
         96 bottles of beer on the wall, 96 bottles of beer.<br>
         Take one down and pass it around, 95 bottles of beer on the wall.`;
 
+    // sets the text inside the right column paragraph to be the 99 Bottles text
     columnText.innerHTML = nnBottlesText;
   }
 
+  // Changes the right column paragraph text to be "this is the third thing"
   function lastThing() {
     // paragraph element in the right column
     var columnText = document.getElementById('right-column-text');
+    // the Last Thing text
     var lastThingText = 'this is the third thing';
 
+    // sets the text inside the right column paragraph to be the Last Thing text
     columnText.innerHTML = lastThingText;
   }
 
+  // sets up the link events when the page is loaded
   window.addEventListener('load', init);
 })();

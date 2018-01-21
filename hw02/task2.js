@@ -1,6 +1,7 @@
 (function() {
   "use strict";
 
+  // Initial function to call when the page is loaded
   function init() {
     var alertButton = document.getElementById('alert-button');
     var incrementButton = document.getElementById('increment-button');
