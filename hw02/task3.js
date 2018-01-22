@@ -11,7 +11,7 @@
     nnBottlesLink.onclick = nnBottles;
     lastThingLink.onclick = lastThing;
 
-    // template string of the Lorem Ipsum text
+    // template string of the Lorem Ipsum text (generated from https://www.lipsum.com/)
     var loremIpsumText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Maecenas lobortis erat mi, sed commodo nulla vestibulum vitae.
         Proin libero leo, aliquet vel dolor at, placerat tempus est.
@@ -61,7 +61,7 @@
   function loremIpsum() {
     // paragraph element in the right column
     var columnText = document.getElementById('right-column-text');
-    // template string of the Lorem Ipsum text
+    // template string of the Lorem Ipsum text (generated from https://www.lipsum.com/)
     var loremIpsumText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Maecenas lobortis erat mi, sed commodo nulla vestibulum vitae.
         Proin libero leo, aliquet vel dolor at, placerat tempus est.
@@ -112,6 +112,7 @@
     // paragraph element in the right column
     var columnText = document.getElementById('right-column-text');
     // template string of the 99 Bottles text
+    // (lyrics from http://www.99-bottles-of-beer.net/lyrics.html)
     var nnBottlesText = `99 bottles of beer on the wall, 99 bottles of beer.<br>
         Take one down and pass it around, 98 bottles of beer on the wall.<br><br>
         98 bottles of beer on the wall, 98 bottles of beer.<br>
